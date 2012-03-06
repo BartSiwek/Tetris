@@ -1,0 +1,7 @@
+Created by Bart Siwek, 2012
+
+Project uses following libraries:
+- Boost.Preprocessor [http://www.boost.org/libs/preprocessor]
+- SDL 1.2 [http://www.libsdl.org/]
+- stb_image [http://nothings.org/stb_image.c]
+- UnitTest++ (for testing) [http://unittest-cpp.sourceforge.net/]

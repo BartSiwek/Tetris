@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Elg-Tests">
+      <UniqueIdentifier>{a23b64f2-981a-468d-b2ab-deed78ea850d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg-Tests\EntityManager">
+      <UniqueIdentifier>{b64a1ee2-8e10-4ba5-af90-4c02d0229502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg-Tests\Utilities">
+      <UniqueIdentifier>{dea4b1b9-07de-4747-9f8a-da2cf5525ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg-Tests\Utilities\Mpl">
+      <UniqueIdentifier>{a8bcff20-5fae-4612-9e53-2b70622b49dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg-Tests\Utilities\StringHash">
+      <UniqueIdentifier>{c489411d-51d5-4852-9b26-ee0b46057e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg-Tests\Clock">
+      <UniqueIdentifier>{b29ded56-f486-47c8-ba79-21aea6efddc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg-Tests\Performance">
+      <UniqueIdentifier>{3ecc3f10-813a-4def-960e-75d78eac452a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg-Tests\Allocators">
+      <UniqueIdentifier>{e2577b4b-ea2d-427b-8c0b-1d805e300aef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Elg-Tests\Allocators\NewDeleteTests.cpp">
+      <Filter>Source Files\Elg-Tests\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg-Tests\Clock\DurationTests.cpp">
+      <Filter>Source Files\Elg-Tests\Clock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg-Tests\Clock\HighResolutionClockTests.cpp">
+      <Filter>Source Files\Elg-Tests\Clock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg-Tests\Clock\TimePointTests.cpp">
+      <Filter>Source Files\Elg-Tests\Clock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg-Tests\EntityManager\ComponentPoolTests.cpp">
+      <Filter>Source Files\Elg-Tests\EntityManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg-Tests\EntityManager\EntityManagerTests.cpp">
+      <Filter>Source Files\Elg-Tests\EntityManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg-Tests\EntityManager\EntityPoolTests.cpp">
+      <Filter>Source Files\Elg-Tests\EntityManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg-Tests\EntityManager\EntitySetTests.cpp">
+      <Filter>Source Files\Elg-Tests\EntityManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg-Tests\Performance\ScopeProfilerTests.cpp">
+      <Filter>Source Files\Elg-Tests\Performance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg-Tests\Utilities\Mpl\MplGcdTests.cpp">
+      <Filter>Source Files\Elg-Tests\Utilities\Mpl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg-Tests\Utilities\Mpl\MplMathTests.cpp">
+      <Filter>Source Files\Elg-Tests\Utilities\Mpl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg-Tests\Utilities\Mpl\MplRatioTests.cpp">
+      <Filter>Source Files\Elg-Tests\Utilities\Mpl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg-Tests\Utilities\StringHash\StringHashTests.cpp">
+      <Filter>Source Files\Elg-Tests\Utilities\StringHash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg-Tests\main.cpp">
+      <Filter>Source Files\Elg-Tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

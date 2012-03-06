@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Tetris">
+      <UniqueIdentifier>{db74f543-ee18-440f-aae9-97c55313a929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tetris\Assets">
+      <UniqueIdentifier>{d93b9d63-f617-48cf-9dba-237280b88025}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tetris\Components">
+      <UniqueIdentifier>{4de1ba31-7d34-4e28-a520-d650a28d4c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tetris\Helpers">
+      <UniqueIdentifier>{99edd8ce-aba2-4023-88be-007dc86fa47c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tetris\Systems">
+      <UniqueIdentifier>{c2e14ef5-c3a0-4e55-94db-19bf9b7ad4e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tetris\Systems\UserInputSystem">
+      <UniqueIdentifier>{5f8c5c9d-c2b0-4132-9c87-3ccde0b1d84d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tetris\Systems\GraphicsSystem">
+      <UniqueIdentifier>{989cf526-3fca-45da-8a57-104c6375f7e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tetris\Systems\GameLogicSystem">
+      <UniqueIdentifier>{a3b364a5-17c6-43e7-9031-03f79e5f2372}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Tetris\Assets\AllAssets.cpp">
+      <Filter>Source Files\Tetris\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tetris\Helpers\Constants.cpp">
+      <Filter>Source Files\Tetris\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tetris\Helpers\TetrisHelper.cpp">
+      <Filter>Source Files\Tetris\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tetris\Systems\GameLogicSystem\GameLogicSystem.cpp">
+      <Filter>Source Files\Tetris\Systems\GameLogicSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tetris\Systems\GraphicsSystem\GraphicsSystem.cpp">
+      <Filter>Source Files\Tetris\Systems\GraphicsSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tetris\Systems\UserInputSystem\UserInputSystem.cpp">
+      <Filter>Source Files\Tetris\Systems\UserInputSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tetris\main.cpp">
+      <Filter>Source Files\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Tetris\TetrisGame.cpp">
+      <Filter>Source Files\Tetris</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Tetris\Assets\AllAssets.h">
+      <Filter>Source Files\Tetris\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Components\AllComponents.h">
+      <Filter>Source Files\Tetris\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Components\BoardPosition.h">
+      <Filter>Source Files\Tetris\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Components\Graphics.h">
+      <Filter>Source Files\Tetris\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Components\HelperTypes.h">
+      <Filter>Source Files\Tetris\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Components\Movement.h">
+      <Filter>Source Files\Tetris\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Components\Tetromino.h">
+      <Filter>Source Files\Tetris\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Components\Tile.h">
+      <Filter>Source Files\Tetris\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Helpers\Constants.h">
+      <Filter>Source Files\Tetris\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Helpers\TetrisHelper.h">
+      <Filter>Source Files\Tetris\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Systems\GameLogicSystem\GameLogicSystem.h">
+      <Filter>Source Files\Tetris\Systems\GameLogicSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Systems\GameLogicSystem\GameLogicSystemProfiling.h">
+      <Filter>Source Files\Tetris\Systems\GameLogicSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Systems\GraphicsSystem\GraphicsSystem.h">
+      <Filter>Source Files\Tetris\Systems\GraphicsSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Systems\GraphicsSystem\GraphicsSystemProfiling.h">
+      <Filter>Source Files\Tetris\Systems\GraphicsSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Systems\UserInputSystem\UserInputSystem.h">
+      <Filter>Source Files\Tetris\Systems\UserInputSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\Systems\UserInputSystem\UserInputSystemProfiling.h">
+      <Filter>Source Files\Tetris\Systems\UserInputSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Tetris\TetrisGame.h">
+      <Filter>Source Files\Tetris</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

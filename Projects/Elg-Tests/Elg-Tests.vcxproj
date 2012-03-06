@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Elg-Tests\Allocators\NewDeleteTests.cpp" />
+    <ClCompile Include="..\..\Src\Elg-Tests\Clock\DurationTests.cpp" />
+    <ClCompile Include="..\..\Src\Elg-Tests\Clock\HighResolutionClockTests.cpp" />
+    <ClCompile Include="..\..\Src\Elg-Tests\Clock\TimePointTests.cpp" />
+    <ClCompile Include="..\..\Src\Elg-Tests\EntityManager\ComponentPoolTests.cpp" />
+    <ClCompile Include="..\..\Src\Elg-Tests\EntityManager\EntityManagerTests.cpp" />
+    <ClCompile Include="..\..\Src\Elg-Tests\EntityManager\EntityPoolTests.cpp" />
+    <ClCompile Include="..\..\Src\Elg-Tests\EntityManager\EntitySetTests.cpp" />
+    <ClCompile Include="..\..\Src\Elg-Tests\main.cpp" />
+    <ClCompile Include="..\..\Src\Elg-Tests\Performance\ScopeProfilerTests.cpp" />
+    <ClCompile Include="..\..\Src\Elg-Tests\Utilities\Mpl\MplGcdTests.cpp" />
+    <ClCompile Include="..\..\Src\Elg-Tests\Utilities\Mpl\MplMathTests.cpp" />
+    <ClCompile Include="..\..\Src\Elg-Tests\Utilities\Mpl\MplRatioTests.cpp" />
+    <ClCompile Include="..\..\Src\Elg-Tests\Utilities\StringHash\StringHashTests.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Elg\Elg.vcxproj">
+      <Project>{2ee7b4a1-90b8-4759-9305-84c77eb3728c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E998EEFC-F524-4513-8681-E7035C073332}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Elg</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;ELG_SCOPE_PROFILING;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(SolutionDir)Src;$(SolutionDir)Libs/Boost/Include;$(SolutionDir)Libs/stb_image/Include;$(SolutionDir)Libs/SDL/Include;$(SolutionDir)Libs/UnitTest++/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <CompileAsManaged>
+      </CompileAsManaged>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;UnitTest++.vsnet2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\SDL\Lib\VS2010\Debug;$(SolutionDir)Libs\UnitTest++\lib\VS2010\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <FixedBaseAddress>
+      </FixedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

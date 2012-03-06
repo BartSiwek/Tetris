@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test|Win32">
+      <Configuration>Test</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2EE7B4A1-90B8-4759-9305-84C77EB3728C}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Elg</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>ELG_SCOPE_PROFILING;WIN32;ENABLE_ASSERTS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(SolutionDir)Src;$(SolutionDir)Libs/Boost/Include;$(SolutionDir)Libs/stb_image/Include;$(SolutionDir)Libs/SDL/Include;$(SolutionDir)Libs/UnitTest++/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;UnitTest++.vsnet2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\SDL\Lib\VS2010\Debug;$(SolutionDir)Libs\UnitTest++\lib\VS2010\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Test|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;ELG_SCOPE_PROFILING;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(SolutionDir)Src;$(SolutionDir)Libs/Boost/Include;$(SolutionDir)Libs/stb_image/Include;$(SolutionDir)Libs/SDL/Include;$(SolutionDir)Libs/UnitTest++/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <CompileAsManaged>
+      </CompileAsManaged>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;UnitTest++.vsnet2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\SDL\Lib\VS2010\Debug;$(SolutionDir)Libs\UnitTest++\lib\VS2010\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <FixedBaseAddress>
+      </FixedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>ELG_SCOPE_PROFILING;WIN32;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(SolutionDir)Src;$(SolutionDir)Libs/Boost/Include;$(SolutionDir)Libs/stb_image/Include;$(SolutionDir)Libs/SDL/Include;$(SolutionDir)Libs/UnitTest++/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;UnitTest++.vsnet2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\SDL\Lib\VS2010\Release;$(SolutionDir)Libs\UnitTest++\lib\VS2010\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\SDL\Lib\VS2010\Release;$(SolutionDir)Libs\UnitTest++\lib\VS2010\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Elg\Allocators\GlobalAllocator.cpp" />
+    <ClCompile Include="..\..\Src\Elg\Allocators\MallocAllocator.cpp" />
+    <ClCompile Include="..\..\Src\Elg\AssetManager\Loaders\ImageLoader.cpp" />
+    <ClCompile Include="..\..\Src\Elg\Clock\GameClock.cpp" />
+    <ClCompile Include="..\..\Src\Elg\Clock\HighResolutionClock.cpp" />
+    <ClCompile Include="..\..\Src\Elg\Performance\FrameStatistics.cpp" />
+    <ClCompile Include="..\..\Src\Elg\Performance\ScopeProfiler.cpp" />
+    <ClCompile Include="..\..\Src\Elg\Utilities\Assert\Assert.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Elg\Allocators\GlobalAllocator.h" />
+    <ClInclude Include="..\..\Src\Elg\Allocators\MallocAllocator.h" />
+    <ClInclude Include="..\..\Src\Elg\AssetManager\Asset-inl.h" />
+    <ClInclude Include="..\..\Src\Elg\AssetManager\Asset.h" />
+    <ClInclude Include="..\..\Src\Elg\AssetManager\AssetDescriptor.h" />
+    <ClInclude Include="..\..\Src\Elg\AssetManager\AssetManager-inl.h" />
+    <ClInclude Include="..\..\Src\Elg\AssetManager\AssetManager.h" />
+    <ClInclude Include="..\..\Src\Elg\AssetManager\AssetManagers\PoolManager-inl.h" />
+    <ClInclude Include="..\..\Src\Elg\AssetManager\AssetManagers\PoolManager.h" />
+    <ClInclude Include="..\..\Src\Elg\AssetManager\Assets\Image.h" />
+    <ClInclude Include="..\..\Src\Elg\AssetManager\DescriptionMacros.h" />
+    <ClInclude Include="..\..\Src\Elg\AssetManager\Loaders\ImageLoader-inl.h" />
+    <ClInclude Include="..\..\Src\Elg\AssetManager\Loaders\ImageLoader.h" />
+    <ClInclude Include="..\..\Src\Elg\Clock\Duration.h" />
+    <ClInclude Include="..\..\Src\Elg\Clock\DurationTypedefs.h" />
+    <ClInclude Include="..\..\Src\Elg\Clock\GameClock.h" />
+    <ClInclude Include="..\..\Src\Elg\Clock\HighResolutionClock.h" />
+    <ClInclude Include="..\..\Src\Elg\Clock\TimePoint.h" />
+    <ClInclude Include="..\..\Src\Elg\EntityManager\ComponentPool\ComponentPool-inl.h" />
+    <ClInclude Include="..\..\Src\Elg\EntityManager\ComponentPool\ComponentPool.h" />
+    <ClInclude Include="..\..\Src\Elg\EntityManager\DescriptionMacros.h" />
+    <ClInclude Include="..\..\Src\Elg\EntityManager\EntityManager-inl.h" />
+    <ClInclude Include="..\..\Src\Elg\EntityManager\EntityManager.h" />
+    <ClInclude Include="..\..\Src\Elg\EntityManager\EntityManagerProfiling.h" />
+    <ClInclude Include="..\..\Src\Elg\EntityManager\EntityPool\EntityPool-inl.h" />
+    <ClInclude Include="..\..\Src\Elg\EntityManager\EntityPool\EntityPool.h" />
+    <ClInclude Include="..\..\Src\Elg\EntityManager\EntitySet.h" />
+    <ClInclude Include="..\..\Src\Elg\EntityManager\IdMacros.h" />
+    <ClInclude Include="..\..\Src\Elg\Game\Game-inl.h" />
+    <ClInclude Include="..\..\Src\Elg\Game\Game.h" />
+    <ClInclude Include="..\..\Src\Elg\Game\GameProfiling.h" />
+    <ClInclude Include="..\..\Src\Elg\Performance\FrameStatistics.h" />
+    <ClInclude Include="..\..\Src\Elg\Performance\ScopeProfiler.h" />
+    <ClInclude Include="..\..\Src\Elg\Utilities\Asserts.h" />
+    <ClInclude Include="..\..\Src\Elg\Utilities\Assert\Assert.h" />
+    <ClInclude Include="..\..\Src\Elg\Utilities\Assert\StaticAssert.h" />
+    <ClInclude Include="..\..\Src\Elg\Utilities\Macros.h" />
+    <ClInclude Include="..\..\Src\Elg\Utilities\Mpl\MplGcd.h" />
+    <ClInclude Include="..\..\Src\Elg\Utilities\Mpl\MplMath.h" />
+    <ClInclude Include="..\..\Src\Elg\Utilities\Mpl\MplRatio.h" />
+    <ClInclude Include="..\..\Src\Elg\Utilities\Mpl\MplRatioTypedefs.h" />
+    <ClInclude Include="..\..\Src\Elg\Utilities\Singleton.h" />
+    <ClInclude Include="..\..\Src\Elg\Utilities\StringHash\Hash.h" />
+    <ClInclude Include="..\..\Src\Elg\Utilities\StringHash\X65599Hash.h" />
+    <ClInclude Include="..\..\Src\Elg\Utilities\StringHash\X65599HashPreprocessor.h" />
+    <ClInclude Include="..\..\Src\Elg\Utilities\Types.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

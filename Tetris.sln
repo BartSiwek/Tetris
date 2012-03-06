@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tetris", "Projects\Tetris\Tetris.vcxproj", "{C1217F36-1C07-49B9-B514-C324DBDD79AA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Elg", "Projects\Elg\Elg.vcxproj", "{2EE7B4A1-90B8-4759-9305-84C77EB3728C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7EEB95C6-F0EA-4E5E-B2E1-2086FE11F048}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Elg-Tests", "Projects\Elg-Tests\Elg-Tests.vcxproj", "{E998EEFC-F524-4513-8681-E7035C073332}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1217F36-1C07-49B9-B514-C324DBDD79AA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C1217F36-1C07-49B9-B514-C324DBDD79AA}.Debug|Win32.Build.0 = Debug|Win32
+		{C1217F36-1C07-49B9-B514-C324DBDD79AA}.Release|Win32.ActiveCfg = Release|Win32
+		{C1217F36-1C07-49B9-B514-C324DBDD79AA}.Release|Win32.Build.0 = Release|Win32
+		{2EE7B4A1-90B8-4759-9305-84C77EB3728C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2EE7B4A1-90B8-4759-9305-84C77EB3728C}.Debug|Win32.Build.0 = Debug|Win32
+		{2EE7B4A1-90B8-4759-9305-84C77EB3728C}.Release|Win32.ActiveCfg = Release|Win32
+		{2EE7B4A1-90B8-4759-9305-84C77EB3728C}.Release|Win32.Build.0 = Release|Win32
+		{E998EEFC-F524-4513-8681-E7035C073332}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E998EEFC-F524-4513-8681-E7035C073332}.Debug|Win32.Build.0 = Debug|Win32
+		{E998EEFC-F524-4513-8681-E7035C073332}.Release|Win32.ActiveCfg = Debug|Win32
+		{E998EEFC-F524-4513-8681-E7035C073332}.Release|Win32.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Elg">
+      <UniqueIdentifier>{c94a7ea5-4f6e-437a-acbd-6052747be8f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Allocators">
+      <UniqueIdentifier>{d4f1f5cd-5ce9-41c7-89b1-04bab303ac13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities">
+      <UniqueIdentifier>{a81606f9-a0c1-410d-a54b-1b2cdef24a52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Assert">
+      <UniqueIdentifier>{ad7b4f8b-eb3c-44c4-b355-2589224d6335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Mpl">
+      <UniqueIdentifier>{9c8c343a-eb8d-485d-97c8-a0aa44e21a69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\StringHash">
+      <UniqueIdentifier>{c471e56c-066c-4142-9181-0ab4d6000e94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\EntityManager">
+      <UniqueIdentifier>{f64ed9d8-40b8-48f7-b125-c9a53f7b379a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\EntityManager\ComponentPool">
+      <UniqueIdentifier>{5d2ba5e2-76df-4856-a97a-7e43f4fab55a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\EntityManager\EntityPool">
+      <UniqueIdentifier>{1b591b1c-15de-442b-ab87-e80c00eb65ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Clock">
+      <UniqueIdentifier>{96d93a78-f040-41c2-9a21-aeeed3f7fe0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Game">
+      <UniqueIdentifier>{81e7c937-688b-44eb-af12-489e2c1d3a21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\AssetManager">
+      <UniqueIdentifier>{5c8b51fc-254a-46fb-b656-7a55bbb59330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\AssetManager\AssetManagers">
+      <UniqueIdentifier>{c17d6032-b688-46f2-9e01-64ba4e7af8d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\AssetManager\Assets">
+      <UniqueIdentifier>{8f3bdf84-a121-41bc-b08e-593de495dc21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\AssetManager\Loaders">
+      <UniqueIdentifier>{a3f47619-8846-4904-ae25-185e6dc45ac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Performance">
+      <UniqueIdentifier>{bcbd5940-d0ac-4607-ba52-367bbf88ba74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Elg\Allocators\GlobalAllocator.cpp">
+      <Filter>Source Files\Elg\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg\Allocators\MallocAllocator.cpp">
+      <Filter>Source Files\Elg\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg\AssetManager\Loaders\ImageLoader.cpp">
+      <Filter>Source Files\Elg\AssetManager\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg\Clock\GameClock.cpp">
+      <Filter>Source Files\Elg\Clock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg\Clock\HighResolutionClock.cpp">
+      <Filter>Source Files\Elg\Clock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg\Performance\FrameStatistics.cpp">
+      <Filter>Source Files\Elg\Performance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg\Performance\ScopeProfiler.cpp">
+      <Filter>Source Files\Elg\Performance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Elg\Utilities\Assert\Assert.cpp">
+      <Filter>Source Files\Elg\Utilities\Assert</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Elg\Allocators\GlobalAllocator.h">
+      <Filter>Source Files\Elg\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Allocators\MallocAllocator.h">
+      <Filter>Source Files\Elg\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\AssetManager\AssetManagers\PoolManager.h">
+      <Filter>Source Files\Elg\AssetManager\AssetManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\AssetManager\AssetManagers\PoolManager-inl.h">
+      <Filter>Source Files\Elg\AssetManager\AssetManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\AssetManager\Assets\Image.h">
+      <Filter>Source Files\Elg\AssetManager\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\AssetManager\Loaders\ImageLoader.h">
+      <Filter>Source Files\Elg\AssetManager\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\AssetManager\Loaders\ImageLoader-inl.h">
+      <Filter>Source Files\Elg\AssetManager\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\AssetManager\Asset.h">
+      <Filter>Source Files\Elg\AssetManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\AssetManager\AssetDescriptor.h">
+      <Filter>Source Files\Elg\AssetManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\AssetManager\Asset-inl.h">
+      <Filter>Source Files\Elg\AssetManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\AssetManager\AssetManager.h">
+      <Filter>Source Files\Elg\AssetManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\AssetManager\AssetManager-inl.h">
+      <Filter>Source Files\Elg\AssetManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\AssetManager\DescriptionMacros.h">
+      <Filter>Source Files\Elg\AssetManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Clock\Duration.h">
+      <Filter>Source Files\Elg\Clock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Clock\DurationTypedefs.h">
+      <Filter>Source Files\Elg\Clock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Clock\GameClock.h">
+      <Filter>Source Files\Elg\Clock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Clock\HighResolutionClock.h">
+      <Filter>Source Files\Elg\Clock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Clock\TimePoint.h">
+      <Filter>Source Files\Elg\Clock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\EntityManager\EntityPool\EntityPool.h">
+      <Filter>Source Files\Elg\EntityManager\EntityPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\EntityManager\EntityPool\EntityPool-inl.h">
+      <Filter>Source Files\Elg\EntityManager\EntityPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\EntityManager\ComponentPool\ComponentPool.h">
+      <Filter>Source Files\Elg\EntityManager\ComponentPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\EntityManager\ComponentPool\ComponentPool-inl.h">
+      <Filter>Source Files\Elg\EntityManager\ComponentPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\EntityManager\DescriptionMacros.h">
+      <Filter>Source Files\Elg\EntityManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\EntityManager\EntityManager.h">
+      <Filter>Source Files\Elg\EntityManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\EntityManager\EntityManager-inl.h">
+      <Filter>Source Files\Elg\EntityManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\EntityManager\EntityManagerProfiling.h">
+      <Filter>Source Files\Elg\EntityManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\EntityManager\EntitySet.h">
+      <Filter>Source Files\Elg\EntityManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\EntityManager\IdMacros.h">
+      <Filter>Source Files\Elg\EntityManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Game\Game.h">
+      <Filter>Source Files\Elg\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Game\Game-inl.h">
+      <Filter>Source Files\Elg\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Game\GameProfiling.h">
+      <Filter>Source Files\Elg\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Performance\FrameStatistics.h">
+      <Filter>Source Files\Elg\Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Performance\ScopeProfiler.h">
+      <Filter>Source Files\Elg\Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Utilities\Assert\Assert.h">
+      <Filter>Source Files\Elg\Utilities\Assert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Utilities\Assert\StaticAssert.h">
+      <Filter>Source Files\Elg\Utilities\Assert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Utilities\Mpl\MplGcd.h">
+      <Filter>Source Files\Elg\Utilities\Mpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Utilities\Mpl\MplMath.h">
+      <Filter>Source Files\Elg\Utilities\Mpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Utilities\Mpl\MplRatio.h">
+      <Filter>Source Files\Elg\Utilities\Mpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Utilities\Mpl\MplRatioTypedefs.h">
+      <Filter>Source Files\Elg\Utilities\Mpl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Utilities\StringHash\Hash.h">
+      <Filter>Source Files\Elg\Utilities\StringHash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Utilities\StringHash\X65599Hash.h">
+      <Filter>Source Files\Elg\Utilities\StringHash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Utilities\StringHash\X65599HashPreprocessor.h">
+      <Filter>Source Files\Elg\Utilities\StringHash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Utilities\Asserts.h">
+      <Filter>Source Files\Elg\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Utilities\Macros.h">
+      <Filter>Source Files\Elg\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Utilities\Singleton.h">
+      <Filter>Source Files\Elg\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Elg\Utilities\Types.h">
+      <Filter>Source Files\Elg\Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

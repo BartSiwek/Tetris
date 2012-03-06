@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Tetris\Assets\AllAssets.cpp" />
+    <ClCompile Include="..\..\Src\Tetris\Helpers\Constants.cpp" />
+    <ClCompile Include="..\..\Src\Tetris\Helpers\TetrisHelper.cpp" />
+    <ClCompile Include="..\..\Src\Tetris\main.cpp" />
+    <ClCompile Include="..\..\Src\Tetris\Systems\GameLogicSystem\GameLogicSystem.cpp" />
+    <ClCompile Include="..\..\Src\Tetris\Systems\GraphicsSystem\GraphicsSystem.cpp" />
+    <ClCompile Include="..\..\Src\Tetris\Systems\UserInputSystem\UserInputSystem.cpp" />
+    <ClCompile Include="..\..\Src\Tetris\TetrisGame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Tetris\Assets\AllAssets.h" />
+    <ClInclude Include="..\..\Src\Tetris\Components\AllComponents.h" />
+    <ClInclude Include="..\..\Src\Tetris\Components\BoardPosition.h" />
+    <ClInclude Include="..\..\Src\Tetris\Components\Graphics.h" />
+    <ClInclude Include="..\..\Src\Tetris\Components\HelperTypes.h" />
+    <ClInclude Include="..\..\Src\Tetris\Components\Movement.h" />
+    <ClInclude Include="..\..\Src\Tetris\Components\Tetromino.h" />
+    <ClInclude Include="..\..\Src\Tetris\Components\Tile.h" />
+    <ClInclude Include="..\..\Src\Tetris\Helpers\Constants.h" />
+    <ClInclude Include="..\..\Src\Tetris\Helpers\TetrisHelper.h" />
+    <ClInclude Include="..\..\Src\Tetris\Systems\GameLogicSystem\GameLogicSystem.h" />
+    <ClInclude Include="..\..\Src\Tetris\Systems\GameLogicSystem\GameLogicSystemProfiling.h" />
+    <ClInclude Include="..\..\Src\Tetris\Systems\GraphicsSystem\GraphicsSystem.h" />
+    <ClInclude Include="..\..\Src\Tetris\Systems\GraphicsSystem\GraphicsSystemProfiling.h" />
+    <ClInclude Include="..\..\Src\Tetris\Systems\UserInputSystem\UserInputSystem.h" />
+    <ClInclude Include="..\..\Src\Tetris\Systems\UserInputSystem\UserInputSystemProfiling.h" />
+    <ClInclude Include="..\..\Src\Tetris\TetrisGame.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Elg\Elg.vcxproj">
+      <Project>{2ee7b4a1-90b8-4759-9305-84c77eb3728c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C1217F36-1C07-49B9-B514-C324DBDD79AA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Tetris</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>ELG_SCOPE_PROFILING;WIN32;ENABLE_ASSERTS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(SolutionDir)Src;$(SolutionDir)Libs/Boost/Include;$(SolutionDir)Libs/stb_image/Include;$(SolutionDir)Libs/SDL/Include;$(SolutionDir)Libs/UnitTest++/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessToFile>false</PreprocessToFile>
+      <AdditionalOptions>/analyze</AdditionalOptions>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\SDL\Lib\VS2010\Debug;$(SolutionDir)Libs\UnitTest++\lib\VS2010\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;UnitTest++.vsnet2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)Libs\SDL\Lib\VS2010\Debug\SDL.dll" "$(SolutionDir)Builds\$(ConfigurationName)"
+xcopy /Y /S "$(SolutionDir)Assets" "$(SolutionDir)Builds\$(ConfigurationName)"</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>ELG_SCOPE_PROFILING;WIN32;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(SolutionDir)Src;$(SolutionDir)Libs/Boost/Include;$(SolutionDir)Libs/stb_image/Include;$(SolutionDir)Libs/SDL/Include;$(SolutionDir)Libs/UnitTest++/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/analyze %(AdditionalOptions)</AdditionalOptions>
+      <StringPooling>true</StringPooling>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\SDL\Lib\VS2010\Release;$(SolutionDir)Libs\UnitTest++\lib\VS2010\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;UnitTest++.vsnet2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)Libs\SDL\Lib\VS2010\Release\SDL.dll" "$(SolutionDir)Builds\$(ConfigurationName)"
+xcopy /Y /S "$(SolutionDir)Assets" "$(SolutionDir)Builds\$(ConfigurationName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
